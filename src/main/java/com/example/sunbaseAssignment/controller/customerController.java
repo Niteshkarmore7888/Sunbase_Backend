@@ -83,9 +83,9 @@ public class customerController {
 
     }
 
-//    @GetMapping("/sync")
-//    public ResponseEntity<Object[]> getTokenFromApi(){
-//        Object[]   customerObject =externalApiCall.getTokenFromApi();
-//        return new ResponseEntity<>(customerObject,HttpStatus.ACCEPTED);
-//    }
+    @GetMapping("/sync")
+    public ResponseEntity<Object[]> getTokenFromApi(){
+       Object[]   customerObject =externalApiCall.getTokenFromApi();
+        return new ResponseEntity<>(customerObject,HttpStatus.ACCEPTED);
+    }
 }
